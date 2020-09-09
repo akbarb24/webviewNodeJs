@@ -16,5 +16,14 @@ let now = new Date();
   res.render('detailTransaction', { title: 'detailTransaction', date: now});
 });
 
+/*GET QRPayment Page*/ 
+router.get('/qrpayment', function(req, res, next) {
+  res.render('qrPayment', { title: 'QR Payment'});
+});
+
+/*GET QRPayment Page*/ 
+router.get('/snap', function(req, res, next) {
+  res.render('snap', { title: 'Payment Detail'});
+});
 
 module.exports = router;
