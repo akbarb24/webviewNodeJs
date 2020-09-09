@@ -48,7 +48,7 @@ html(lang='en')
                   button.login100-form-btn
                     pay
                 // Button trigger modal
-                button.login100-form-btn(type='button', data-toggle='modal', data-target='#exampleModal') View Receipt
+                button.login100-form-btn(type='button', data-toggle='modal', data-target='#exampleModal') Upload Receipt
     #exampleModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
       .modal-dialog(role='document')
         .modal-content
@@ -56,24 +56,19 @@ html(lang='en')
             h5#exampleModalLabel.modal-title Receipt
             button.close(type='button', data-dismiss='modal', aria-label='Close')
               span(aria-hidden='true') ×
-          .wrap-input100.validate-input.m-b-23
-            span.label-input100(style='color: red')
-              b 09 Sep 2020 | 16:16
-          .wrap-input100.validate-input.m-b-23
-            span.label-input100(style='color: green')
-              b Trasaction Susscess
-          .wrap-input100.validate-input.m-b-23
-            span.label-input100 100Rb | Id 43784374347
-          .wrap-input100.validate-input.m-b-23
-            span.label-input100 Total Payment : Rp. 100.000
-          .wrap-input100.validate-input.m-b-23
-            span.label-input100 Payment Method : GoPay
-          .wrap-input100.validate-input.m-b-23
-            span.label-input100 Trassaction Id : ***9878
-          .wrap-input100.validate-input.m-b-23
-            span.label-input100 Merchant Order Id : ***3243
+          .wrap-input100.validate-input.m-b-23.p-l-55.p-r-55.p-t-65.p-b-54
+            video#video(width='480', height='640', autoplay='', style="outline:none; width:100%; height:80%;")
+            .container-login100-form-btn
+              .wrap-login100-form-btn
+                .login100-form-bgbtn
+                button.login100-form-btn
+                  | Capture
           .modal-footer
-            button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+            .container-login100-form-btn
+              .wrap-login100-form-btn
+                .login100-form-bgbtn
+                button.login100-form-btn(type='button', data-dismiss='modal')
+                  | Upload
     // end Modal
     #dropDownSelect1
     // ===============================================================================================
@@ -92,3 +87,4 @@ html(lang='en')
     script(src='vendor/countdowntime/countdowntime.js')
     // ===============================================================================================
     script(src='js/main.js')
+    script(src='js/camera.js')
