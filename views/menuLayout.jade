@@ -42,13 +42,15 @@ html(lang='en')
                   | QRPayment
           form.login100-form.validate-form(action='/alfamart', method='GET')
             img(style='margin: auto;width: 60%;border: 3px solid #a651b8;padding: 10px;margin-left: 80px;margin-right: auto;', src='images/alfa.png', alt='alfamart')
+            input.input100(type='hidden', name='merchant', value='Alfamart')
             .container-login100-form-btn(style='padding: 20px 100px;')
               .wrap-login100-form-btn
                 .login100-form-bgbtn
                 button.login100-form-btn
                   | AlfaMart Pay
-          form.login100-form.validate-form(action='/indomart', method='GET')
+          form.login100-form.validate-form(action='/alfamart', method='GET')
             img(style='margin: auto;width: 60%;border: 3px solid #a651b8;padding: 10px;margin-left: 80px;margin-right: auto;', src='images/indomart.jpg', alt='indomart')
+            input.input100(type='hidden', name='merchant', value='Indomart')
             .container-login100-form-btn(style='padding: 20px 100px;')
               .wrap-login100-form-btn
                 .login100-form-bgbtn

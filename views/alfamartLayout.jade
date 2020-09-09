@@ -31,10 +31,10 @@ html(lang='en')
       .container-login100(style="background-image: url('images/bg-01.jpg');")
         .wrap-login100.p-l-55.p-r-55.p-t-65.p-b-54
           form.login100-form.validate-form(action='/detailTransaction', method='GET')
-            span.login100-form-title.p-b-49 AlfaMart Payment
+            span.login100-form-title.p-b-49 #{merchant} Payment
             .wrap-input100.validate-input.m-b-23
               span.label-input100
-                b Ke Alfamart Bintaro
+                b Ke #{merchant} Bintaro
             .wrap-input100.validate-input.m-b-23
               span.label-input100 Jumlah Rp.
               input.input100(type='text', name='amount', placeholder='1.xxx.xxxx')
