@@ -30,38 +30,30 @@ html(lang='en')
     .limiter
       .container-login100(style="background-image: url('images/bg-01.jpg');")
         .wrap-login100.p-l-55.p-r-55.p-t-65.p-b-54
-          form.login100-form.validate-form(action='/detailTransaction', method='GET')
-            span.login100-form-title.p-b-49
-              | 
-              u Payment
-            // Dummy
-            #barCode(style='display: none;')
-              img(src='images/bar.jpg', alt='barcode')
-              button(style='background-color: #03d7fc; /* Green */border: none;color: white;padding: 20px;text-align: center;text-decoration: none;display: inline-block;font-size: 9px;margin: 2px 2px;cursor: pointer;border-radius: 12px;') Scan QR to Continue Payment
-            .wrap-input100.validate-input.m-b-23
-              span.label-input100 Makaira Indica C
-            .wrap-input100.validate-input.m-b-23
-              span.label-input100 #{phonenumber}
-            .wrap-input100.validate-input.m-b-23
-              span.label-input100 Pembayaran Indomart
-            .wrap-input100.validate-input.m-b-23
-              span.label-input100 Total Payment : Rp.100.000
-          // Pay
-          .container-login100-form-btn
-            .wrap-login100-form-btn
-              .login100-form-bgbtn
-              button.login100-form-btn(onclick='myFunction()')
-                | PAY
-    // Dummy Barcode
-    script.
-      function myFunction() {
-      var x = document.getElementById("barCode");
-      if (x.style.display === "none") {
-      x.style.display = "block";
-      } else {
-      x.style.display = "block";
-      }
-      }
+          img(src='images/iss.png', alt='iss')
+          span.login100-form-title.p-b-49
+            | PayLater
+          form.login100-form.validate-form(action='/qrpayment', method='GET')
+            img(style='margin: auto;width: 60%;border: 3px solid #a651b8;padding: 10px;margin-left: 80px;margin-right: auto;', src='images/bar.jpg', alt='barcode')
+            .container-login100-form-btn(style='padding: 20px 100px;')
+              .wrap-login100-form-btn
+                .login100-form-bgbtn
+                button.login100-form-btn
+                  | QRPayment
+          form.login100-form.validate-form(action='/alfamart', method='GET')
+            img(style='margin: auto;width: 60%;border: 3px solid #a651b8;padding: 10px;margin-left: 80px;margin-right: auto;', src='images/alfa.png', alt='alfamart')
+            .container-login100-form-btn(style='padding: 20px 100px;')
+              .wrap-login100-form-btn
+                .login100-form-bgbtn
+                button.login100-form-btn
+                  | AlfaMart Pay
+          form.login100-form.validate-form(action='/indomart', method='GET')
+            img(style='margin: auto;width: 60%;border: 3px solid #a651b8;padding: 10px;margin-left: 80px;margin-right: auto;', src='images/indomart.jpg', alt='indomart')
+            .container-login100-form-btn(style='padding: 20px 100px;')
+              .wrap-login100-form-btn
+                .login100-form-bgbtn
+                button.login100-form-btn
+                  | IndoMart Pay
     #dropDownSelect1
     // ===============================================================================================
     script(src='vendor/jquery/jquery-3.2.1.min.js')
