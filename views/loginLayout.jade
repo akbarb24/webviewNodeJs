@@ -30,9 +30,10 @@ html(lang='en')
     .limiter
       .container-login100(style="background-image: url('images/bg-01.jpg');")
         .wrap-login100.p-l-55.p-r-55.p-t-65.p-b-54
-          form.login100-form.validate-form(action='/payment', method='GET')
+          form.login100-form.validate-form(action='/menu', method='GET')
             span.login100-form-title.p-b-49
-              | Login
+              | PayLater
+            img(src='images/iss.png', alt='iss')
             .wrap-input100.validate-input.m-b-23(data-validate='Phone Number is required')
               span.label-input100 Phone Number
               input.input100(type='text', name='phonenumber', placeholder='Type your Phone Number')

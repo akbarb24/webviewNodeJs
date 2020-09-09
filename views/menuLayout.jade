@@ -30,57 +30,30 @@ html(lang='en')
     .limiter
       .container-login100(style="background-image: url('images/bg-01.jpg');")
         .wrap-login100.p-l-55.p-r-55.p-t-65.p-b-54
-          form.login100-form.validate-form
-            span.login100-form-title.p-b-49(style='color: green') Transaction Success😊
-            .wrap-input100.validate-input.m-b-23
-              span.label-input100
-                b Pembayaran Indomart
-            .wrap-input100.validate-input.m-b-23
-              span.label-input100
-                b Payment Total : Rp. 100.000
-            .wrap-input100.validate-input.m-b-23
-              span.label-input100
-                b Payment Method : GoPay
-            // Receipt
-            .container-login100-form-btn
+          img(src='images/iss.png', alt='iss')
+          span.login100-form-title.p-b-49
+            | PayLater
+          form.login100-form.validate-form(action='/qrpayment', method='GET')
+            img(style='margin: auto;width: 60%;border: 3px solid #a651b8;padding: 10px;margin-left: 80px;margin-right: auto;', src='images/bar.jpg', alt='barcode')
+            .container-login100-form-btn(style='padding: 20px 100px;')
               .wrap-login100-form-btn
                 .login100-form-bgbtn
-                  button.login100-form-btn
-                    pay
-                // Button trigger modal
-                button.login100-form-btn(type='button', data-toggle='modal', data-target='#exampleModal') View Receipt
-    #exampleModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
-      .modal-dialog(role='document')
-        .modal-content
-          .modal-header
-            h5#exampleModalLabel.modal-title 
-            b Receipt
-            button.close(type='button', data-dismiss='modal', aria-label='Close')
-              span(aria-hidden='true') ×
-          .wrap-input100.validate-input.m-b-23
-            span.label-input100(style='color: red')
-              b #{date}
-          .wrap-input100.validate-input.m-b-23
-            span.label-input100(style='color: green')
-              b Trasaction Susscess✓
-          .wrap-input100.validate-input.m-b-23
-            span.label-input100 
-            b 100Rb | Id 43784374347
-          .wrap-input100.validate-input.m-b-23
-            span.label-input100 
-            b Total Payment : Rp. 100.000
-          .wrap-input100.validate-input.m-b-23
-            span.label-input100 
-            b Payment Method : GoPay
-          .wrap-input100.validate-input.m-b-23
-            span.label-input100 
-            b Trassaction Id : ***9878
-          .wrap-input100.validate-input.m-b-23
-            span.label-input100 
-            b Merchant Order Id : ***3243
-          .modal-footer
-            button.btn.btn-secondary(type='button', data-dismiss='modal') Close
-    // end Modal
+                button.login100-form-btn
+                  | QRPayment
+          form.login100-form.validate-form(action='/alfamart', method='GET')
+            img(style='margin: auto;width: 60%;border: 3px solid #a651b8;padding: 10px;margin-left: 80px;margin-right: auto;', src='images/alfa.png', alt='alfamart')
+            .container-login100-form-btn(style='padding: 20px 100px;')
+              .wrap-login100-form-btn
+                .login100-form-bgbtn
+                button.login100-form-btn
+                  | AlfaMart Pay
+          form.login100-form.validate-form(action='/indomart', method='GET')
+            img(style='margin: auto;width: 60%;border: 3px solid #a651b8;padding: 10px;margin-left: 80px;margin-right: auto;', src='images/indomart.jpg', alt='indomart')
+            .container-login100-form-btn(style='padding: 20px 100px;')
+              .wrap-login100-form-btn
+                .login100-form-bgbtn
+                button.login100-form-btn
+                  | IndoMart Pay
     #dropDownSelect1
     // ===============================================================================================
     script(src='vendor/jquery/jquery-3.2.1.min.js')

@@ -6,13 +6,14 @@ router.get('/', function(req, res, next) {
 
 });
 /*GET Payment Page*/ 
-router.get('/payment', function(req, res, next) {
-  res.render('payment', { title: 'Payment' , phonenumber: req.query.phonenumber});
+router.get('/menu', function(req, res, next) {
+  res.render('menu', { title: 'menu'});
 });
 
 /*GET Payment Page*/ 
 router.get('/detailTransaction', function(req, res, next) {
-  res.render('detailTransaction', { title: 'detailTransaction'});
+let now = new Date();
+  res.render('detailTransaction', { title: 'detailTransaction', date: now});
 });
 
 
