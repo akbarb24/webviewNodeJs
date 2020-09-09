@@ -15,5 +15,10 @@ router.get('/detailTransaction', function(req, res, next) {
   res.render('detailTransaction', { title: 'detailTransaction'});
 });
 
+/*GET QRPayment Page*/ 
+router.get('/qrpayment', function(req, res, next) {
+  res.render('qrPayment', { title: 'QR Payment'});
+});
+
 
 module.exports = router;
