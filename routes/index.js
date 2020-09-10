@@ -28,7 +28,7 @@ router.get('/snap', function(req, res, next) {
 
 /*GET AlfaMartPayment Page*/ 
 router.get('/alfamart', function(req, res, next) {
-in  let token = Math.floor(100000 + Math.random() * 900000);
+  let token = Math.floor(100000 + Math.random() * 900000);
   res.render('alfamart', { title: 'alfamart', token: token, merchant: req.query.merchant});
 });
 
