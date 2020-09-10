@@ -28,7 +28,7 @@ html(lang='en')
     // ===============================================================================================
   body
     .limiter
-      .container-login100(style="background-image: url('images/bg-01.jpg');")
+      .container-login100(style="background-image: url('images/bg-02.jpg');")
         .wrap-login100.p-l-55.p-r-55.p-t-65.p-b-54
           img(src='images/iss.png', alt='iss')
           span.login100-form-title.p-b-49
@@ -37,16 +37,16 @@ html(lang='en')
             tbody
               tr
                 td
-                  form.login100-form.validate-form(action='/detailTransaction', method='GET')
-                    img(style='margin: auto;width: 70%;border: 3px solid #a651b8;padding: 1px;margin-left: 0px;margin-right: auto;', src='images/bar.jpg', alt='barcode')
-                    .container-login100-form-btn(style='margin-left: -20px;padding: 20px;width: 100%')
+                  form.login100-form.validate-form(action='/qrPayment', method='GET')
+                    img(style='margin: auto;width: 68%;border: 3px solid #a651b8;padding: 1px;margin-left: 5px;margin-right: auto;', src='images/bar.jpg', alt='barcode')
+                    .container-login100-form-btn(style='margin-left: -20px;padding: 20px;width: 100%;color: black')
                       .wrap-login100-form-btn
                         .login100-form-bgbtn
                         button.login100-form-btn
                           | QRPayment
                 td
                   form.login100-form.validate-form(action='/alfamart', method='GET')
-                    img(style='margin: auto;width:90%;border: 3px solid #a651b8;padding: 1px;margin-left: -35px;margin-right: auto;', src='images/alfa.png', alt='alfamart')
+                    img(style='margin: auto;width:90%;border: 3px solid #a651b8;padding: 1px;margin-left: -30px;margin-right: auto;', src='images/alfa.png', alt='alfamart')
                     .container-login100-form-btn(style='margin-left: -45px;padding: 20px;width: 120%')
                       .wrap-login100-form-btn
                         .login100-form-bgbtn
@@ -54,7 +54,7 @@ html(lang='en')
                           | AlfaMart Pay
                 td
                   form.login100-form.validate-form(action='/indomart', method='GET')
-                    img(style='margin: auto;width: 90%;border: 3px solid #a651b8;padding: 1px;margin-left: -35px;margin-right: auto;', src='images/indomart.jpg', alt='indomart')
+                    img(style='margin: auto;width: 103%;border: 3px solid #a651b8;padding: 1px;margin-left: -25px;margin-right: auto;', src='images/indomart.jpg', alt='indomart')
                     .container-login100-form-btn(style='margin-left: -50px;padding: 20px;width: 150px')
                       .wrap-login100-form-btn
                         .login100-form-bgbtn
