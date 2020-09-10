@@ -32,4 +32,9 @@ router.get('/alfamart', function(req, res, next) {
   res.render('alfamart', { title: 'alfamart', token: token, merchant: req.query.merchant});
 });
 
+/*GET Snap Page*/ 
+router.get('/paymentDone', function(req, res, next) {
+  res.render('paymentDone', { title: 'Payment Done'});
+});
+
 module.exports = router;

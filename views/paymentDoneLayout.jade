@@ -30,48 +30,15 @@ html(lang='en')
     .limiter
       .container-login100(style="background-image: url('images/bg-01.jpg');")
         .wrap-login100.p-l-55.p-r-55.p-t-65.p-b-54
-          form.login100-form.validate-form
-            span.login100-form-title.p-b-49(style='color: green') Transaction Success😊
-            .wrap-input100.validate-input.m-b-23
-              span.label-input100
-                b Pembayaran Indomart
-            .wrap-input100.validate-input.m-b-23
-              span.label-input100
-                b Payment Total : Rp. #{amount}
-            .wrap-input100.validate-input.m-b-23
-              span.label-input100
-                b Payment Method : Kaspro
-            // Receipt
+          form.login100-form.validate-form(action='/menu', method='GET')
+            span.login100-form-title(style='color: green') Receipt Submitted 😃
+            .p-b-54.p-t-40.login100-form-title
+              img(src='images/receipt.jpg', alt='receipt', width='120', height='160', style="outline:none; width:50%; height:100%;")
             .container-login100-form-btn
               .wrap-login100-form-btn
                 .login100-form-bgbtn
-                  button.login100-form-btn
-                    pay
-                // Button trigger modal
-                button.login100-form-btn(type='button', data-toggle='modal', data-target='#exampleModal') Upload Receipt
-    #exampleModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
-      .modal-dialog(role='document')
-        .modal-content
-          .modal-header
-            h5#exampleModalLabel.modal-title 
-            b Receipt
-            button.close(type='button', data-dismiss='modal', aria-label='Close')
-              span(aria-hidden='true') ×
-          form.login100-form.validate-form(action='/paymentDone', method='GET')
-            .wrap-input100.validate-input.m-b-23.p-l-55.p-r-55.p-t-65.p-b-54
-              video#video(width='480', height='640', autoplay='', style="outline:none; width:100%; height:80%;")
-              .container-login100-form-btn
-                .wrap-login100-form-btn
-                  .login100-form-bgbtn
-                  button.login100-form-btn
-                    | Capture
-            .modal-footer
-              .container-login100-form-btn
-                .wrap-login100-form-btn
-                  .login100-form-bgbtn
-                  button.login100-form-btn
-                    | Submit
-    // end Modal
+                button.login100-form-btn
+                  | DONE
     #dropDownSelect1
     // ===============================================================================================
     script(src='vendor/jquery/jquery-3.2.1.min.js')
@@ -89,4 +56,3 @@ html(lang='en')
     script(src='vendor/countdowntime/countdowntime.js')
     // ===============================================================================================
     script(src='js/main.js')
-    script(src='js/camera.js')
