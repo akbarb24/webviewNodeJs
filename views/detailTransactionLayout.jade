@@ -37,10 +37,10 @@ html(lang='en')
                 b Pembayaran Indomart
             .wrap-input100.validate-input.m-b-23
               span.label-input100
-                b Payment Total : Rp. #{amount}
+                b Total : Rp. #{amount}
             .wrap-input100.validate-input.m-b-23
               span.label-input100
-                b Payment Method : Kaspro
+                b Metode Pembayaran : Kaspro
             // Receipt
             .container-login100-form-btn
               .wrap-login100-form-btn
@@ -54,7 +54,7 @@ html(lang='en')
         .modal-content
           .modal-header
             h5#exampleModalLabel.modal-title 
-            b Receipt
+            b Struk
             button.close(type='button', data-dismiss='modal', aria-label='Close')
               span(aria-hidden='true') ×
           form.login100-form.validate-form(action='/paymentDone', method='GET')
@@ -64,16 +64,16 @@ html(lang='en')
                 .wrap-login100-form-btn
                   .login100-form-bgbtn
                   button.login100-form-btn
-                    | Capture
+                    | Ambil
             .wrap-input100.m-b-23(style="text-align: center;")
-              span.label-input100.m-b-35 Or Upload Image
+              span.label-input100.m-b-35 Atau Unggah Gambar
               input.input100.m-t-20(type="file" accept="image/*")
             .modal-footer
               .container-login100-form-btn
                 .wrap-login100-form-btn
                   .login100-form-bgbtn
                   button.login100-form-btn
-                    | Submit
+                    | Kirim
     // end Modal
     #dropDownSelect1
     // ===============================================================================================
